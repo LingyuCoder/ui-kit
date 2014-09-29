@@ -1,0 +1,17 @@
+@font-face{font-family:iconfont;src:url(http://at.alicdn.com/t/font_1412002424_4152014.eot);src:url(http://at.alicdn.com/t/font_1412002424_4152014.eot?#iefix) format('embedded-opentype'),url(http://at.alicdn.com/t/font_1412002424_4152014.woff) format('woff'),url(http://at.alicdn.com/t/font_1412002424_4152014.ttf) format('truetype'),url(http://at.alicdn.com/t/font_1412002424_4152014.svg#iconfont) format('svg')}
+.iconfont{font-family:iconfont;font-size:16px;font-style:normal}
+.profile{top:100px;left:100px;position:relative;border-radius:5px;padding-top:40px;width:340px;height:410px;background:#fafaff;color:#3e6372;font-family:cursive;overflow:hidden;text-align:center}
+.profile:before{content:"";position:absolute;width:100%;height:5px;top:0;left:0;background:#fff}
+.profile:after{content:"";position:absolute;width:100%;height:5px;bottom:0;left:0;background:#ff6900}
+.profile .title{font-size:18px;font-weight:bolder}
+.profile .subtitle{font-size:18px}
+.profile .avatar{display:inline-block;position:relative;margin:20px 0 30px;width:112px;height:112px;background-image:url(../img/avatar.jpg);background-size:100%;border-radius:50%}
+.profile .avatar:before{content:"";position:absolute;right:-11px;top:50%;margin-top:-8px;width:16px;height:16px;border:3px solid #fafaff;border-radius:50%;background:#fad920}
+.profile .social{margin:0;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;padding:13px 0}
+.profile .social li{display:inline-block;width:35px;height:35px;padding:0 10px}
+.profile .social li a{display:inline-block;width:100%;height:100%;border-radius:50%;border:1px solid #fff;line-height:35px;text-decoration:none;font-size:20px}
+.profile .social li a.twitter{border-color:#55acee;color:#55acee}
+.profile .social li a.github{border-color:#333;color:#333}
+.profile .social li a.weibo{border-color:#d52727;color:#d52727}
+.profile .social li a.rss{border-color:#faac1e;color:#faac1e}
+.profile .follow{display:inline-block;margin-top:30px;width:120px;height:50px;border-radius:5px;line-height:50px;color:#fff;background:#ff6900;cursor:pointer}

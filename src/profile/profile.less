@@ -1,0 +1,115 @@
+@import "base";
+
+
+.profile {
+	top: 100px;
+	left: 100px;
+	position: relative;
+	border-radius: 5px;
+	padding-top: 40px;
+	width: 340px;
+	height: 410px;
+	background: @white;
+	color: @darkblue;
+	font-family: cursive;
+	overflow: hidden;
+	text-align: center;
+	&:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 5px;
+		top: 0;
+		left: 0;
+		background: #fff;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 5px;
+		bottom: 0;
+		left: 0;
+		background: @orange;
+	}
+	.title {
+		font-size: 18px;
+		font-weight: bolder;
+	}
+	.subtitle {
+		font-size: 18px;
+	}
+	.avatar {
+		display: inline-block;
+		position: relative;
+		margin: 20px 0 30px;
+		width: 112px;
+		height: 112px;
+		background-image: url(../img/avatar.jpg);
+		background-size: 100%;
+		border-radius: 50%;
+		&:before {
+			content: "";
+			position: absolute;
+			right: -11px;
+			top: 50%;
+			margin-top: -8px;
+			width: 16px;
+			height: 16px;
+			border: 3px solid @white;
+			border-radius: 50%;
+			background: @yellow;
+		}
+	}
+	.social {
+		margin: 0;
+		padding: 0;
+		border-top: 1px solid #e1e1e1;
+		border-bottom: 1px solid #e1e1e1;
+		padding: 13px 0; 
+		li {
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			padding: 0 10px;
+			a {
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				border: 1px solid #fff;
+				line-height: 35px;
+				text-decoration: none;
+				font-size: 20px;
+				&.twitter {
+					border-color: #55acee;
+					color: #55acee;
+				}
+				&.github {
+					border-color: #333;
+					color: #333;
+				}
+				&.weibo {
+					border-color: #d52727;
+					color: #d52727;
+				}
+				&.rss {
+					border-color: #faac1e;
+					color: #faac1e;
+				}
+			}
+		}
+	}
+	.follow {
+		display: inline-block;
+		margin-top: 30px;
+		width: 120px;
+		height: 50px;
+		border-radius: 5px;
+		line-height: 50px;
+		color: #fff;
+		background: @orange;
+		cursor: pointer;
+		
+	}
+}
