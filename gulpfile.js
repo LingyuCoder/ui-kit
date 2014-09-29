@@ -34,4 +34,7 @@ gulp.task('watch', function() {
     gulp.watch([
         './src/**/*.less'
     ], ['css']);
+    gulp.watch([
+        './src/**/*.html'
+    ], ['copy']);
 });

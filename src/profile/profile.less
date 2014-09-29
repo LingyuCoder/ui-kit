@@ -2,8 +2,6 @@
 
 
 .profile {
-	top: 100px;
-	left: 100px;
 	position: relative;
 	border-radius: 5px;
 	padding-top: 40px;
@@ -11,7 +9,7 @@
 	height: 410px;
 	background: @white;
 	color: @darkblue;
-	font-family: cursive;
+	font-family: arial;
 	overflow: hidden;
 	text-align: center;
 	&:before {
@@ -21,7 +19,7 @@
 		height: 5px;
 		top: 0;
 		left: 0;
-		background: #fff;
+		background: #fcfcfc;
 	}
 	&:after {
 		content: "";
@@ -69,6 +67,7 @@
 		padding: 13px 0; 
 		li {
 			display: inline-block;
+			list-style: none;
 			width: 35px;
 			height: 35px;
 			padding: 0 10px;
@@ -110,6 +109,5 @@
 		color: #fff;
 		background: @orange;
 		cursor: pointer;
-		
 	}
 }
