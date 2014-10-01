@@ -10,7 +10,7 @@ function err(error) {
     this.emit('end');
 }
 gulp.task('css', function() {
-    return gulp.src(['./src/**/*.less'])
+    return gulp.src(['./src/demo.less'])
         .pipe(plumber(err))
         .pipe(less({
             paths: [path.join(__dirname, 'src')],
