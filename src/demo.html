@@ -9,13 +9,14 @@
 			background-color: #efeef4;
 		}
 		.profile,
-		.pager {
+		.pager,
+		.categories {
 			margin-bottom: 20px;
 		}
 	</style>
 </head>
 <body>
-	<div class="profile">
+	<section class="profile">
 		<div class="title">Lingyu Wang</div>
 		<div class="subtitle">Front-end Engineer, Coder</div>
 		<div class="avatar"></div>
@@ -26,24 +27,48 @@
 			<li><a href="javascript:void(0)" class="iconfont rss">&#xe601;</a></li>
 		</ul>
 		<div class="follow">Follow</div>
-	</div>
-	<ul class="pager">
-		<li><a href="javascript:void(0)" class="prev">上一页</a></li>
-		<li><a href="javascript:void(0)" class="page">1</a></li>
-		<li><a href="javascript:void(0)" class="page">2</a></li>
-		<li><a href="javascript:void(0)" class="ellipse">...</a></li>
-		<li><a href="javascript:void(0)" class="page">3</a></li>
-		<li><a href="javascript:void(0)" class="page">4</a></li>
-		<li><a href="javascript:void(0)" class="next">下一页</a></li>
-	</ul>
-	<div class="categories">
+	</section>
+	<section class="pager">
+		<ul>
+			<li><a href="javascript:void(0)" class="prev">上一页</a></li>
+			<li><a href="javascript:void(0)" class="page">1</a></li>
+			<li><a href="javascript:void(0)" class="page">2</a></li>
+			<li><a href="javascript:void(0)" class="ellipse">...</a></li>
+			<li><a href="javascript:void(0)" class="page">3</a></li>
+			<li><a href="javascript:void(0)" class="page">4</a></li>
+			<li><a href="javascript:void(0)" class="next">下一页</a></li>
+		</ul>
+	</section>
+	<section class="categories">
 		<div class="title">分类<span class="iconfont">&#xe604;</span></div>
 		<ul class="list">
-			<li><a href="javascript:void(0)">NodeJs</a><div class="count"><span>5</span></div></li>
-			<li><a href="javascript:void(0)">JavaScript</a><div class="count"><span>5</span></div></li>
-			<li><a href="javascript:void(0)">CSS</a><div class="count"><span>5</span></div></li>
-			<li><a href="javascript:void(0)">前端</a><div class="count"><span>5</span></div></li>
+			<li class="item"><a href="javascript:void(0)">NodeJs</a><div class="count"><span>5</span></div></li>
+			<li class="item"><a href="javascript:void(0)">JavaScript</a><div class="count"><span>5</span></div></li>
+			<li class="item"><a href="javascript:void(0)">CSS</a><div class="count"><span>5</span></div></li>
+			<li class="item"><a href="javascript:void(0)">前端</a><div class="count"><span>5</span></div></li>
 		</ul>
-	</div>
+	</section>
+	<article class="post summary">
+		<section class="cover">
+			<img src="img/banner.jpg">
+		</section>
+		<header class="header">
+			<h1 class="title">koa-anywhere</h1>
+			<div class="subtitle">通过一条命令，将当前目录变成一个静态文件服务器</div>
+		</header>
+		<section class="excerpt">
+			<p>最近写了一个快速启动静态文件服务器的NodeJs包koa-anywhere，可以通过一条命令快速的启动静态文件服务器，而且支持多级目录。目前已经发到了NPM上了</p>
+			<p>最近写了一个快速启动静态文件服务器的NodeJs包koa-anywhere，可以通过一条命令快速的启动静态文件服务器，而且支持多级目录。目前已经发到了NPM上了</p>
+			<p>最近写了一个快速启动静态文件服务器的NodeJs包koa-anywhere，可以通过一条命令快速的启动静态文件服务器，而且支持多级目录。目前已经发到了NPM上了</p>
+		</section>
+		<footer class="footer">
+			<ul class="info">
+				<li class="item"><span class="iconfont">&#xe605;</span><span class="count">123</span></li>
+				<li class="item"><span class="iconfont">&#xe607;</span><span class="count">920</span></li>
+				<li class="item"><span class="iconfont">&#xe606;</span><span class="count">256</span></li>
+			</ul>
+			<a class="more" href="javascript:void(0)">详细阅读</a>
+		</footer>
+	</article>
 </body>
 </html>
