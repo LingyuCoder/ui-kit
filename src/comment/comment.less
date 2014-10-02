@@ -1,0 +1,155 @@
+@import "base";
+
+.widget(){
+	position: relative;
+	border-radius: 5px;
+	background: @white;
+	.before(@orange);
+	&:before {
+		visibility: visible;
+	}
+	.after(rgba(64, 64, 64, .1));
+	&:after {
+		visibility: visible;
+	}
+}
+
+.content(@str){
+	&:before {
+		content: @str;
+	}
+}
+
+.comment {
+	width: 760px;
+	#ds-thread #ds-reset {
+		.ds-meta,
+		.ds-comments-info,
+		.ds-powered-by {
+			display: none;
+		}
+		.ds-comments,
+		li.ds-post,
+		.ds-post-self {
+			border: none;
+		}
+		.ds-comment-body {
+			padding-left: 0;
+		}
+	}
+	#ds-thread #ds-reset {
+		ul.ds-children .ds-post-self {
+			&:before {
+				display: none;
+			}
+		}
+		.ds-replybox {
+			padding: 20px;
+			.widget();
+
+			.ds-avatar {
+				position: relative;
+				margin-right: 15px;
+				margin-left: 20px;
+				background: none;
+				width: 60px;
+				height: 60px;
+				float: left;
+				img {
+					width: 60px;
+					height: 60px;
+					border-radius: 50%;
+				}
+			}
+			form {
+				display: block;
+				overflow: hidden;
+			}
+		}
+		.ds-post-self {
+			overflow: hidden;
+			color: @darkblue;
+			padding: 20px 0 0;
+			margin-top: 40px;
+			.widget();
+
+			.ds-user-name.ds-highlight{
+				color: @darkblue !important;
+			}
+			
+			.ds-inline-replybox {
+				margin: none;
+				padding: 0 20px 20px 100px;
+			}
+
+			ul.ds-children .ds-avatar,
+			.ds-avatar {
+				margin-right: 15px;
+				margin-left: 20px;
+				background: none;
+				width: 60px;
+				height: 60px;
+				img {
+					width: 60px;
+					height: 60px;
+					border-radius: 50%;
+				}
+			}
+			ul.ds-children .ds-comment-body,
+			.ds-comment-body {
+				padding-left: 0;
+				.ds-comment-header {
+					padding: 15px 20px;
+					line-height: 20px;
+					.ds-user-name {
+						font-size: 18px;
+						font-weight: bolder;
+					}
+				}
+				p {
+					padding: 0 20px 0 100px;
+					font-size: 16px;
+				}
+				.ds-time {
+					float: right;
+				}
+				.ds-comment-footer {
+					margin-top: 30px;
+					padding: 20px 20px 20px 90px;
+					line-height: 20px;
+					border-top: 1px solid @gray;
+					a {
+						color: @darkblue !important;
+						font-size: 18px !important;
+					}
+					.ds-icon {
+						display: none;
+					}
+					a {
+						margin-right: 30px;
+						&:before {
+							font-family:"iconfont";
+							font-style:normal;
+							margin-right: 10px;
+						}
+					}
+					.ds-post-reply {
+						.content('');
+					}
+					.ds-post-likes {
+						.content('');
+					}
+					.ds-post-repost {
+						.content('');
+					}
+					.ds-post-report {
+						.content('');
+					}
+					.ds-post-delete {
+						.content('');
+					}
+				}
+			}
+		}
+	}
+}
