@@ -52,9 +52,10 @@ body{font-family:'Microsoft YaHei',arial,sans-serif}
 .post .footer .info .item .count{margin-left:10px}
 .post .footer .more{float:right;color:#ff6900}
 .comment{width:760px}
-.comment #ds-thread #ds-reset .ds-comments-info,.comment #ds-thread #ds-reset .ds-meta,.comment #ds-thread #ds-reset .ds-powered-by{display:none}
+.comment #ds-thread #ds-reset .ds-meta,.comment #ds-thread #ds-reset .ds-powered-by{display:none}
 .comment #ds-thread #ds-reset .ds-comments,.comment #ds-thread #ds-reset .ds-post-self,.comment #ds-thread #ds-reset li.ds-post{border:none}
 .comment #ds-thread #ds-reset .ds-comment-body{padding-left:0}
+.comment #ds-thread #ds-reset .ds-sort a.ds-current{color:#ff6900}
 .comment #ds-thread #ds-reset ul.ds-children .ds-post-self:before{display:none}
 .comment #ds-thread #ds-reset .ds-replybox{padding:20px;position:relative;border-radius:5px;background:#fafaff}
 .comment #ds-thread #ds-reset .ds-replybox:before{content:"";position:absolute;width:100%;height:5px;top:0;left:0;background:#ff6900;visibility:visible}

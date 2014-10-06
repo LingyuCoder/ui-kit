@@ -24,7 +24,6 @@
 	width: 760px;
 	#ds-thread #ds-reset {
 		.ds-meta,
-		.ds-comments-info,
 		.ds-powered-by {
 			display: none;
 		}
@@ -38,6 +37,9 @@
 		}
 	}
 	#ds-thread #ds-reset {
+		.ds-sort a.ds-current {
+			color: @orange;
+		}
 		ul.ds-children .ds-post-self {
 			&:before {
 				display: none;
