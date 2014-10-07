@@ -20,6 +20,7 @@
 	</style>
 </head>
 <body>
+	<script type="text/javascript" src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.js"></script>
 	<section class="profile">
 		<div class="title">Lingyu Wang</div>
 		<div class="subtitle">Front-end Engineer, Coder</div>
@@ -89,6 +90,70 @@
 			})();
 		</script>
 	</section>
+
+	<ul class="accordion">
+		<li>
+			<div class="link">
+				<i class="iconfont icon left">&#xe60b;</i>最近的文章<i class="iconfont icon right">&#xe60a;</i>
+			</div>
+			<ul class="submenu">
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+			</ul>
+		</li>
+		<li>
+			<div class="link">
+				<i class="iconfont icon left">&#xe60d;</i>分类<i class="iconfont icon right">&#xe60a;</i>
+			</div>
+			<ul class="submenu">
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+			</ul>
+		</li>
+		<li>
+			<div class="link">
+				<i class="iconfont icon left">&#xe60c;</i>标签<i class="iconfont icon right">&#xe60a;</i>
+			</div>
+			<ul class="submenu">
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+			</ul>
+		</li>
+		<li>
+			<div class="link">
+				<i class="iconfont icon left">&#xe60e;</i>友情链接<i class="iconfont icon right">&#xe60a;</i>
+			</div>
+			<ul class="submenu">
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+				<li><a href="#">subtest</a></li>
+			</ul>
+		</li>
+	</ul>
+	<script type="text/javascript">
+		$('.accordion .link').on('click', function(event){
+			var $this = $(this);
+			var $submenu = $this.next();
+			if($submenu.is(":visible")) {
+				$submenu.slideUp();
+				$this.removeClass('open');
+			} else {
+				$submenu.slideDown();
+				$this.addClass('open');
+			}
+		});
+	</script>
 	
 </body>
 </html>
