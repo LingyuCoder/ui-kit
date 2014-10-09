@@ -4,11 +4,17 @@ var less = require('gulp-less');
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
 var minifyCSS = require('gulp-minify-css');
+var rimraf = require('rimraf');
 
 function err(error) {
     console.error('[ERROR]: ' + error.message);
     this.emit('end');
 }
+
+gulp.task('clean', function(cb) {
+    rimraf('build', cb);
+});
+
 gulp.task('css', function() {
     return gulp.src(['./src/demo.less'])
         .pipe(plumber(err))
@@ -16,7 +22,9 @@ gulp.task('css', function() {
             paths: [path.join(__dirname, 'src')],
             relativeUrls: true
         }))
-        .pipe(minifyCSS({keepBreaks:true}))
+        .pipe(minifyCSS({
+            keepBreaks: true
+        }))
         .pipe(rename(function(path) {
             path.basename += '-min';
         }))
@@ -24,11 +32,11 @@ gulp.task('css', function() {
 });
 
 gulp.task('copy', function() {
-    return gulp.src(['./src/**/*.html', './src/**/*.jpg'])
+    return gulp.src(['./src/**/*.*', '!./src/**/*.less'])
         .pipe(gulp.dest('./build/'));
 });
 
-gulp.task('default', ['css', 'copy']);
+gulp.task('default', ['clean', 'css', 'copy']);
 
 gulp.task('watch', function() {
     gulp.watch([
