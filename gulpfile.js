@@ -43,6 +43,6 @@ gulp.task('watch', function() {
         './src/**/*.less'
     ], ['css']);
     gulp.watch([
-        './src/**/*.html'
+        './src/**/*.*', '!./src/**/*.less'
     ], ['copy']);
 });
