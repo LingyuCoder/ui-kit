@@ -53,7 +53,7 @@ body{font-family:'Microsoft YaHei',arial,sans-serif}
 .post .footer .more{float:right;color:#ff6900}
 .comment{width:760px}
 .comment #ds-thread #ds-reset .ds-meta,.comment #ds-thread #ds-reset .ds-powered-by{display:none}
-.comment #ds-thread #ds-reset .ds-comments,.comment #ds-thread #ds-reset .ds-post-self,.comment #ds-thread #ds-reset li.ds-post{border:none}
+.comment #ds-thread #ds-reset .ds-comments,.comment #ds-thread #ds-reset .ds-post-self,.comment #ds-thread #ds-reset li.ds-post{border:none!important}
 .comment #ds-thread #ds-reset .ds-comment-body{padding-left:0}
 .comment #ds-thread #ds-reset .ds-sort a.ds-current{color:#ff6900}
 .comment #ds-thread #ds-reset ul.ds-children .ds-post-self:before{display:none}
