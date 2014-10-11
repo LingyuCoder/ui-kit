@@ -145,5 +145,5 @@ body{font-family:'Microsoft YaHei',arial,sans-serif}
 .code-editor pre.line-numbers{position:relative;padding-left:55px;counter-reset:linenumber}
 .code-editor pre.line-numbers>code{position:relative}
 .code-editor .line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:22px;font-size:100%;left:-40px;width:40px;letter-spacing:-1px;color:#879BA6;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
-.code-editor .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}
-.code-editor .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}
+.code-editor .line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}
+.code-editor .line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}
