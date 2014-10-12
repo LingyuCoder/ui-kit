@@ -4,6 +4,7 @@ var less = require('gulp-less');
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
 var minifyCSS = require('gulp-minify-css');
+var autoprefixer = require('gulp-autoprefixer');
 var rimraf = require('rimraf');
 
 function err(error) {
@@ -21,6 +22,10 @@ gulp.task('css', function() {
         .pipe(less({
             paths: [path.join(__dirname, 'src')],
             relativeUrls: true
+        }))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
         }))
         .pipe(minifyCSS({
             keepBreaks: true
