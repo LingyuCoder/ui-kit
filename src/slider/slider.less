@@ -2,11 +2,15 @@
 
 @slides: 6;
 
+
+
 .prev_arrow () {
   display: block;
   left: 0;
   right: auto;
   transform: rotate(45deg);
+  -webkit-touch-callout: none;
+  user-select: none;
 }
 
 .next_arrow () {
@@ -14,6 +18,8 @@
   right: 0;
   left: auto;
   transform: rotate(225deg);
+  -webkit-touch-callout: none;
+  user-select: none;
 } 
 
 .slides_init(@index) when (@index > 0) {
@@ -141,11 +147,11 @@
     }
   }
 
-  &.infinite {
+  &.infinity {
     & > input:first-of-type:checked ~ .arrows label.goto-last {
       .prev_arrow();
     }
-    & > input:last-of-type:checked ~ .arrows label.goto-first{
+    & > input:last-of-type:checked ~ .arrows label.goto-first {
       .next_arrow();
     }
   }
